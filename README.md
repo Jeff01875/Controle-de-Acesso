@@ -1,11 +1,12 @@
 # Controle-de-Acesso
 **Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS, S3 e autentificar usuários e implementar permissões de menor privilégio**  
 
-##Descrição do projeto
-###Objetivo
+## Descrição do projeto
+
+### Objetivo
 Implementar uma solução escalável e segura para autentificar e gerenciar acessos aos recursos armazenados do S3, garantindo práticas recomendadas e seguras de permissões de menor privilégio e criptografia para o conteúdo no S3
 ---
-###Componetes e funcionalidades 
+### Componetes e funcionalidades 
 1. **Amazon Cognito**
 - Utilização do Cognito para a implementação do User Pool aonde serão armazenado as credenciais dos usuários e autentificados. E criei um Identity Pool que fará a criação de credenciais aws temporárias e a entrega de permissões para acessar os recursos
 - IAM utilizado para criar permissões que serão associadas ao recurso e aos usuários onde compõe de permissões e ações minímas, garatindo as práticas recomendas de Menor Privilégio
