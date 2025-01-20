@@ -1,2 +1,2 @@
 # Controle-de-Acesso
-Projeto de controle de acesso onde utilizo IAM para criar permissões de acesso ao recurso e utilizar o cognito para autentificar esses usuários 
+**Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS e outros recursos para autentificar usuários e anexar permissões de menor privilégio**  
