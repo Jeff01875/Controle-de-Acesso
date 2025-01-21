@@ -17,10 +17,10 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   - Só usuários autentificados poderão descriptograr o conteúdo. Garantindo maior controle e segurança do acesso ao conteúdo
 
 3. **S3(Simple storege service)**
-   - **Armazenamento**: O s3 é um serviço de armazenamento arquivos, fotos, músicas e etc.
-   - **Alta disponibilidade**: Ele traz alta disponibilidade e resiliênca pois ele será replicados em diversas (AZs) em uma 
+  - **Armazenamento**: O s3 é um serviço de armazenamento arquivos, fotos, músicas e etc.
+  - **Alta disponibilidade**: Ele traz alta disponibilidade e resiliênca pois ele será replicados em diversas (AZs) em uma 
      única região.
-   - **Otimização de Custo**: Fornece opções de camadas para armazenar seus objetos. Podendo analisar a melhor camada para o 
+  - **Otimização de Custo**: Fornece opções de camadas para armazenar seus objetos. Podendo analisar a melhor camada para o 
      cenário desejado.
 
  4. **IAM(Identity and Acess Manager)**
