@@ -27,4 +27,5 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
    - IAM é um serviço onde nos possibilida criar, gerenciar e excluir usuário, policys, roles
    - **Policy**: Definem permissões ou negações aplicadas nos usuários, grupos, roles garantindo controle de acesso baseado no  
      princípio de menor privilégio .
+
   
