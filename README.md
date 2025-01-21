@@ -1,6 +1,9 @@
 # Controle-de-Acesso
 **Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS, S3 e autentificar usuários e implementar permissões de menor privilégio**  
 
+ ##**Diagrama do Projeto**
+ (Diagrama_projeto.png)[https://github.com/Jeff01875/Controle-de-Acesso/blob/main/Diagrama_projeto.png]
+ 
 ## Descrição do projeto
 
 ### Objetivo
@@ -27,5 +30,6 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
    - IAM é um serviço onde nos possibilida criar, gerenciar e excluir usuário, policys, roles
    - **Policy**: Definem permissões ou negações aplicadas nos usuários, grupos, roles garantindo controle de acesso baseado no  
      princípio de menor privilégio .
+ ---
 
-  
+ 
