@@ -19,7 +19,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   - Utilizado para criptografar a fonte do conteúdo armazenado no S3
   - Só usuários autentificados poderão descriptograr o conteúdo. Garantindo maior controle e segurança do acesso ao conteúdo
 
-3. **S3(Simple storege service)**
+3. **S3(Simple storage service)**
   - **Armazenamento**: O s3 é um serviço de armazenamento arquivos, fotos, músicas e etc.
   - **Alta disponibilidade**: Ele traz alta disponibilidade e resiliênca pois ele será replicados em diversas (AZs) em uma 
      única região.
