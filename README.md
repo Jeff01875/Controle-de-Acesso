@@ -55,9 +55,10 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
 ---
  3. IAM Users
   - Criei Dois usuários no IAM para que recebessem permissões específicas do kms
-  > **⚠️ Atenção:** Poderia associar essas permissões à role do cognito, porém não estaria de acordo com o **Princípio de Menor Privilégio**
   - O primeiro recebeu permissões de Admin: Cria, excluir, criptografar, descriptografar e entre outros
   - O segundo recebu permissões de User: Criptografar, descriptografar
+  > **⚠️ Atenção:** Poderia associar essas permissões à role do cognito, porém não estaria de acordo com o **Princípio de Menor Privilégio**
+
    ![iam_user.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/iam_user.png)
 
   > **⚠️ Atenção:** Por ser um teste, acabei não criando nenhum grupo para esses dois usuários, mas coloquei tags nesses usuários onde eu poderia identificar o que cada um 
