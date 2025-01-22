@@ -36,6 +36,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
 
   - Iniciei criando minha policy/role onde ela seria associada ao Identity pool do cognito
   - Através dela, qualquer usuário que fosse autentificado pelo user pool, teria acesso aos conteúdo
+     
    ![policy_role_cognito.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/policy_role_cognito.png)
 
   > **⚠️ Atenção:** No meio tempo de teste desse projeto, tive diversos problemas referindo a **Acess denied** pois não ter configurado as permisões 
@@ -48,7 +49,9 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   - A role fornece credenciais temporárias de acesso aos recursos
   - Implementei a role como identidade Web pois ela é utilizada em cenário onde usuários que são autentificados através de um IDP, garantindo assim, credenciais temporárias 
     para acessar recursos dentro da aws
+    
    ![ciracção_role_cognito.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/cirac%C3%A7%C3%A3o_role_cognito.png)
+   
 ---
  3. IAM Users
   - Criei Dois usuários no IAM para que recebessem permissões específicas do kms
