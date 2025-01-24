@@ -83,7 +83,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   - Implementei a role como identidade Web pois ela é utilizada em cenário onde usuários que são autentificados através de um IDP, garantindo assim, credenciais temporárias 
     para acessar recursos dentro da aws
     
-   ![ciracção_role_cognito.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/cirac%C3%A7%C3%A3o_role_cognito.png)
+   
    
 ---
   
