@@ -57,7 +57,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   3.KMS 
   - Criei uma chave aonde ela será utilizada para criptografar e descriptografar o objecto que estará no bucket
   - Essa chave irá aumentar ainda mais a segurança e garantindo o objetivo do objeto
-  - 
+    
    ![KMS.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/KMS.png)
 
   - Por se tratar de um teste, utilizei uma chave Simétrica aonde se consiste de uma única chave que faz a criptografia e descriptografia, diferente da assimétrica que se 
