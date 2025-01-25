@@ -72,7 +72,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   5. Bucket policy
   - Eu tive que implementar uma policy de **GET**, **LIST** na bucket
   - Porém, eu tive que desmarcar a caixinha onde torna aquela bucket privada para pública
-  - após desmarcar, implementei essa policy
+  - após desmarcar, implementei essa policy aonde ela torna a bucket totalmente pública 
 
    ![POLICY_BUCKET.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/POLICY_BUCKET.png)
  
