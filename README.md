@@ -140,5 +140,11 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   ---
  
 ## Conclusão do Projeto
+  1. Essa solução tráz  um nível alto de segurança
+  2. Atráves das policys, podemos ter controle e visibilidade sobre o que os usuários podem acessar
+  3. Utilizar o cognito nos permite uma maneira segura e um ambiente de login amigável e seguro para armazenar credenciais dos usuários que querem acessar os recursos, e permitindo maior
+     granuláridade para controle e associação da policy aos usuários.
+  4. A utilização do KMS é essencial para assegurar que os objectos que serão acessados, estejam seguro e que só podem ser lidos, pegos por pessoas que são autorizadas
+  5.  Utilizei o MFA no cognito para aumentar ainda mais o login dos usuários. Com isso, só usuários autenticos podem ter acesso a AWS.
 
  
