@@ -75,6 +75,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
    - após desmarcar, implementei essa policy aonde ela torna a bucket totalmente pública 
 
    ![POLICY_BUCKET.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/POLICY_BUCKET.png)
+   
   ---
  6. User Pool(cognito) - criação
    - Criei um grupo de identidade aonde será um diretório dos usuários
@@ -98,20 +99,46 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
  9. Confirmação de Cadastro
      
    ![CONFIRM_AUTHENTICATION.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/CONFIRM_AUTHENTICATION.png)
- 
-   
-  2. IAM Role
 
-  - Criei a role para que ela assuma a policy
-  - A role fornece credenciais temporárias de acesso aos recursos
-  - Implementei a role como identidade Web pois ela é utilizada em cenário onde usuários que são autentificados através de um IDP, garantindo assim, credenciais temporárias 
-    para acessar recursos dentro da aws
+ 10. IAM Role
+
+  - Criei a role para que ela assuma a policy que permite os usuário autentificados pelo cognito, tenham acesso ao **S3** 
+  - Ao assumir essa policy, eu irei associar essa role ao cognito, onde ele criará credenciais temporárias de acesso ao recurso de acordo com permissões específicas da 
+    policy
+
+    ![COGNITO_ROLE_1.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/COGNITO_ROLE_1.png)
     
-   
-   
----
-  
----   
+ 10. Criação Identity Pool
+     
+   - Criei o grupo de identidade para que ele criei credenciais temporárias da aws para os usuários
+   - Nesse processo você precisa implementar o **USER POOL**
+   - Após os usuários efetuarem o login, o identity pool utiliza do STS(Security Token Service) para que se crie tokens temporários aonde serão associados aos usuários
 
+     ![IDENTITY_POOL.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/IDENTITY_POOL.png)
+
+  ---
+
+ 11. Adicionar mais uma URL
+     
+   - Tive que alterar implementar mais uma URL na identidade visual, onde após efutuado o login, ele será redirecionado para o conteúdo
+     
+ 12. Teste de login
+   
+   ![LOGIN_USER.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/LOGIN_USER.png)
+
+ 13. Lista do conteúdo armazenado no bucket do S3
+   - Nesta parte eu tive exito e não tive ao mesmo tempo
+   - O usuário conseguiu ter acesso as informações do conteúdo, porém, teve contato com um arquivo XML
+
+   ![LIST_OBJECT.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/LIST_OBJECT.png)
+     
+   - Neste arquivo podemos ver algumas informações, como por exemplo
+   - Name: nome da bucket aonde o objeto está armazenado
+   - Key: o nome do objeto
+   - Displayname: Nome do usuário que está acessando o objeto
+
+  ---
+ 
+## Conclusão do Projeto
 
  
