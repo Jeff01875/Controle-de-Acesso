@@ -1,5 +1,5 @@
 # Controle-de-Acesso
-**Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS, S3 e autentificar usuários e implementar permissões de menor privilégio**  
+**Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS, S3 e autenticar usuários e implementar permissões de menor privilégio**  
 
 ## **Diagrama do Projeto**
 
@@ -8,7 +8,7 @@
 ## Descrição do projeto
 
 ### Objetivo
-Implementar uma solução escalável e segura para autentificar e gerenciar acessos aos recursos armazenados do S3, garantindo práticas recomendadas e seguras de permissões de menor privilégio e criptografia para o conteúdo no S3
+Implementar uma solução escalável e segura para autenticar e gerenciar acessos aos recursos armazenados do S3, garantindo práticas recomendadas e seguras de permissões de menor privilégio e criptografia para o conteúdo no S3
 ---
 ### Componetes e funcionalidades 
 1. **Amazon Cognito**
@@ -54,8 +54,6 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
   > **⚠️ Atenção:** No meio tempo de teste desse projeto, tive diversos problemas referindo a **Acess denied** pois não ter configurado as permisões 
     correta. Porém, busquei alguma policy que associada as permissões ao cognito e o S3 na própria documentação. Essa policy que vc estão vendo, ela 
     básicamente associa as permissões de **GET**, **PUT**, **LIST** aos usuários do cognito. Essa policy consegui na própria documentação da aws.
-    
-
   
   ---
  3.KMS 
@@ -68,7 +66,7 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
     utiliza de duas chaves: Pública e privada 
   ---
  4. S3
-   - Criei uma bucket no S3 onde será armazenado o objecto em que os usuários do cognito irão acessar
+   - Criei um bucket no S3 onde será armazenado o objecto em que os usuários do cognito irão acessar
    - Essa bucket será criptografada pelo KMS
     
    ![BUCKET_OBJECT.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/BUCKET_OBJECT.png)
@@ -76,21 +74,23 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
  5. Bucket policy
    - Eu tive que implementar uma policy de **GET**, **LIST** na bucket
    - Porém, eu tive que desmarcar a caixinha onde torna aquela bucket privada para pública
-   - após desmarcar, implementei essa policy aonde ela torna a bucket totalmente pública 
+   - após desmarcar, implementei essa policy aonde ela torna a bucket totalmente pública
 
    ![POLICY_BUCKET.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/POLICY_BUCKET.png)
-   
+
+> **⚠️ Atenção:** Tornei a bucket pública temporariamente para verificar se o conteúdo estava sendo entregue corretamente. Após o teste, reverti a configuração, garantindo que a bucket voltasse a ser privada. Tenho plena consciência de que tornar uma bucket pública não está alinhado com os princípios de menor privilégio nem com o pilar de segurança do Well-Architected Framework.
+
   ---
  6. User Pool(cognito) - criação
    - Criei um grupo de identidade aonde será um diretório dos usuários
    - No momento em que o usuário finaliza o cadastro, os atributos de login que selecionei, estarão visíveis para mim.
-   - Através do User pool, connsigo ter controle e visualizar dados dos usuários, podendo até exclui-los.
+   - Através do User pool, consigo ter controle e visualizar dados dos usuários, podendo até exclui-los.
      
    ![USER_POOL_CREATION.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/USER_POOL_CREATION.png)
    
  7. User Pool(cognito) - criado
    - Aqui podemos visualizar o User pool criado
-   - Podemos implementar um MFA no login para que se tenha mais um fator de autentificação, garantindo ainda mais a segurança do login dos usuários
+   - Podemos implementar um MFA no login para que se tenha mais um fator de autentificação, garantindo maior segurança do login dos usuários
    - Podemos também visualizar a identidade de visualização, onde será direcinado os usuários para que possam fazer o cadastro e login
     
    ![USER_POOL.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/USER_POOL.png)
