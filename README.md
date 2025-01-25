@@ -53,7 +53,10 @@ Implementar uma solução escalável e segura para autentificar e gerenciar aces
 
   > **⚠️ Atenção:** No meio tempo de teste desse projeto, tive diversos problemas referindo a **Acess denied** pois não ter configurado as permisões 
     correta. Porém, busquei alguma policy que associada as permissões ao cognito e o S3 na própria documentação. Essa policy que vc estão vendo, ela 
-    básicamente associa as permissões de **GET**, **PUT**, **LIST** aos usuários do cognito.
+    básicamente associa as permissões de **GET**, **PUT**, **LIST** aos usuários do cognito. Essa policy consegui na própria documentação da aws.
+    
+
+  
   ---
  3.KMS 
    - Criei uma chave aonde ela será utilizada para criptografar e descriptografar o objecto que estará no bucket
