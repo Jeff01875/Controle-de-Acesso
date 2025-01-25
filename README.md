@@ -2,8 +2,9 @@
 **Este repositório documenta um projeto aonde utilizei IAM, Cognito, KMS, S3 e autentificar usuários e implementar permissões de menor privilégio**  
 
 ## **Diagrama do Projeto**
- ![Diagrama_projeto.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/Diagrama_projeto.png)
- 
+
+   ![DIAGRAMA_PROJETO.png](https://github.com/Jeff01875/Controle-de-Acesso/blob/main/DIAGRAMA_PROJETO.png)
+  
 ## Descrição do projeto
 
 ### Objetivo
