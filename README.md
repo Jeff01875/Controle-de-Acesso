@@ -32,7 +32,7 @@ Implementar uma solução escalável e segura para autenticar e gerenciar acesso
    - **Policy**: Definem permissões ou negações aplicadas nos usuários, grupos, roles garantindo controle de acesso baseado no  
      princípio de menor privilégio .
  ---
- # Passo a Passo da Criação
+ # Passo à Passo da Criação
  
  1. IAM Users
    - Criei Dois usuários no IAM para que recebessem permissões específicas do kms
